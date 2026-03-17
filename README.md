@@ -8,3 +8,10 @@ some usefull command
 [Shell](shell.md)
 
 [SSH](ssh.md)
+
+python
+
+- uninstall all pip package : 
+  ```
+  pip uninstall $(pip list --format=freeze --user | cut -d= -f1) -y
+  ```
