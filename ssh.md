@@ -48,3 +48,16 @@
     ```
     git remote show origin
     ```
+
+# guide git 
+
+## Etape de merge 
+```
+git fetch origin
+git checkout branch_dans_la_quelle_merge
+git pull origin branch_dans_la_quelle_merge
+git merge branche_a_merge
+```
+Si conflit, les resoudres et faire un commit 
+
+Puis push !
