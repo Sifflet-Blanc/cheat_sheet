@@ -36,6 +36,14 @@ Activer le démarrage automatique de Docker
 ```
 sudo systemctl enable docker
 ```
+
+# Lazydocker 
+```
+VERSION="0.24.4"
+curl -sL "https://github.com/jesseduffield/lazydocker/releases/download/v${VERSION}/lazydocker_${VERSION}_Linux_x86_64.tar.gz" | tar xzf -
+sudo mv lazydocker /usr/local/bin/
+```
+
 # In cli 
 ```
 docker stop $(docker ps -aq)
