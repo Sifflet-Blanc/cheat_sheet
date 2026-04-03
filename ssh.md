@@ -4,7 +4,7 @@
   git config --global --add user.email "flo.crahay@gmail.com"
   git config --global --add user.name "Sifflet_blanc"
   git config --global --add safe.directory ~/www
-  git config pull.rebase false
+  git config --global pull.rebase false
   ```
 - Création des bon fichier s'ils n'existent pas déjà
   ```
