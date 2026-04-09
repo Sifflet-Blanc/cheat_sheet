@@ -9,6 +9,8 @@ some usefull command
 
 [SSH](ssh.md)
 
+[Git](git.md)
+
 python
 
 - uninstall all pip package : 
