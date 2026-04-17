@@ -9,6 +9,13 @@
 
 `git config --global core.editor "vim"`
 
+```bash
+git config --global alias.tree "log \
+--graph --abbrev-commit --decorate \
+--format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' \
+--all"
+```
+
 ## Initialisation
 Du debut :
 `git init`
@@ -107,8 +114,22 @@ Historique des actions locales (utile en cas de foirage)
 `git reflog`
 
 Ajouter un tag a un commit:
-`git tag <untag>` _les tags sont unique sur tout le projet_
+```bash
+git tag <tag_name>
+```
+    _les tags sont unique sur tout le projet_
+    
     _on peut checkout sur un tag_
+
+Pour push un tag on peut 
+```bash
+git push origin tag <tag_name>
+```
+
+On peut supprimer un tag avec 
+```bash
+git tag -d <tag_name>
+```
 
 Revert 
 `git revert <commit>` _fait un commit qui fait l'action inverse du commit referencer, fait un commit ! (contrairement au reset)_ 
