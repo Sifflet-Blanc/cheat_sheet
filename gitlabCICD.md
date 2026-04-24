@@ -119,6 +119,7 @@ unit:
     script:
         - mvn test -f cdb-app
 ```
+Mettre une cle pour le cache c'est l'equivalent de connaitre l'id (c'est mieux)
 
 ## Artifacts 
 ```yaml
@@ -186,6 +187,7 @@ test:
   script:
     - ...
 ```
+*Le job de prod ne doit dependre qu'aucun autre*
 
 ## `Services`
 We can start a docker on witch depend the actual job with `services` (Ex: a database for integration test)

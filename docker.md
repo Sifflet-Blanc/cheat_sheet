@@ -178,10 +178,10 @@ It's a pile of layer, if one layer change all layer behind will be rebuild. So l
 
 ## `FROM`
 Always start with `FROM ***` always set a version with `:vesion` otherwise docker will use `:latest` with could cause problem
-    - `debian`, `ubuntu` or `alpine` are famous linux distrib
-    - `mysql` or `nginx` are also popular
-    - `scratch` pour partir de 0
-
+- `debian`, `ubuntu` or `alpine` are famous linux distrib
+- `mysql` or `nginx` are also popular
+- `scratch` pour partir de 0
+- *Toujours mettre des versions complètes dans les image d.d.d pour avoir quelque chose de fix*
 
 ## `WORKDIR`
 Change the working directory to a given one 
@@ -287,6 +287,7 @@ Section where we put all <Y>:<X> ports correspondance
     ports:
       - "8090:8080"
 ```
+Utiliser une varable pour definir les ports partagé pour eviter les conflis en cas de presence de nombreux projets en local
 
 ## `depends_on`
 Section where we put the services on witch depends the service
