@@ -49,3 +49,28 @@ Injection des beans dans les objects **@Autowired**(defini par default)
 
 
 fichier de config Spring pour definir des Beans (généralement pour des objects externes)
+
+
+# AOP
+Concepts 
+- **JoinPoint** : l’endroit où appliquer le traitement
+  - une méthode
+  - une initialisation de variable ...
+- **PointCut** : la règle de sélection du JoinPoint
+  - une annotation
+  - une classe
+  - un nom de méthode ...
+- **Advice** : décrit quand on doit mettre en place l’aspect
+  - @Before
+  - @After
+  - @Around
+  - @AtAfterThrowing ...
+
+
+## @Transactional 
+- readOnly 
+	boolean (optimisation de perf)
+- transactionManager
+	choisir parmi de multiples txManagers
+- Propagation
+	Gerer les créations et imbrications
