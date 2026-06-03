@@ -1,4 +1,6 @@
+[Accueil](README.md)
 # Spring
+
 - Framework
 - Java (JVM)
 - Ioc Container
@@ -11,8 +13,6 @@
   - ... 
 
 ## IoC Container
-
-## AOP
 
 ## Transaction
 Actions atomiques, un ensemble d'action qui doivent se produire ensemble, si une echoue toutes doivent echoué.
@@ -69,8 +69,8 @@ Concepts
 
 ## @Transactional 
 - readOnly 
-	boolean (optimisation de perf)
+	_boolean (optimisation de perf)_
 - transactionManager
-	choisir parmi de multiples txManagers
+	_choisir parmi de multiples txManagers_
 - Propagation
-	Gerer les créations et imbrications
+	_Gerer les créations et imbrications_

@@ -1,27 +1,22 @@
-# cheat_sheet
-some usefull command
+# cheat sheet
+Some usefull cheat sheet :
 
-[Acronyme](acronyme.md)
+- [Acronyme](acronyme.md)
+- [Docker](docker.md)
+- [FFMPEG](ffmpeg.md)
+- [Git](git.md)
+- [GitLabCI/CD](gitlabCICD.md)
+- [Java](java.md)
+- [JavaScript](javascript.md)
+- [Python](python.md)
+- [React](react.md)
+- [REST](rest.md)
+- [Shell](shell.md)
+- [Spring](spring.md)
+- [SSH](ssh.md)
+- [Test](test.md)
 
-[Docker](docker.md)
+Be aware of log !!!!! It could be a major leak issue. 
 
-[FFMPEG](ffmpeg.md)
 
-[Git](git.md)
-
-[Java](java.md)
-
-[Shell](shell.md)
-
-[Spring](spring.md)
-
-[SSH](ssh.md)
-
-python
-
-- uninstall all pip package : 
-  ```
-  pip uninstall $(pip list --format=freeze --user | cut -d= -f1) -y
-  ```
-
-Faire attention au log !!!!!
+Performance comes after everything else!

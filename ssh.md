@@ -1,11 +1,5 @@
+[Accueil](README.md)
 # Configuration de git et du ssh
-- Initialisation de git :
-  ```
-  git config --global --add user.email "flo.crahay@gmail.com"
-  git config --global --add user.name "Sifflet_blanc"
-  git config --global --add safe.directory ~/www
-  git config --global pull.rebase false
-  ```
 - Création des bon fichier s'ils n'existent pas déjà
   ```
   mkdir ~/.ssh
@@ -25,7 +19,7 @@
   echo "ssh-add ~/.ssh/id_rsa" >> ~/.bashrc
   source ~/.bashrc
   ```
-- Copier le contenu de `~/.ssh/id_rsa.pub` dans la [section ssh du profil perso github](https://github.com/settings/keys) dans l'option nouvelle cle
+- Copier le contenu de `~/.ssh/id_rsa.pub` dans la section ssh du profil perso [github](https://github.com/settings/keys)/[gitlab](https://gitlab.com/-/user_settings/ssh_keys) dans l'option nouvelle cle
 - Tester le bon fonctionnement de la cle ssh avec :
   ```
   ssh -T git@github.com
@@ -48,16 +42,3 @@
     ```
     git remote show origin
     ```
-
-# guide git 
-
-## Etape de merge 
-```
-git fetch origin
-git checkout branch_dans_la_quelle_merge
-git pull origin branch_dans_la_quelle_merge
-git merge branche_a_merge
-```
-Si conflit, les resoudres et faire un commit 
-
-Puis push !

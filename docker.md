@@ -1,4 +1,6 @@
+[Accueil](README.md)
 # Install
+
 Uninstall old package
 ```bash
 sudo apt remove docker docker-engine docker.io containerd runc
@@ -136,13 +138,13 @@ Stop running container
 ```
 docker stop <container_id | container_name>
 ```
-    - That gently stop them if it's don't work replace `stop` by `kill`
+- That gently stop them if it's don't work replace `stop` by `kill`
 
 Remove a container by name or id
 ```
 docker rm <container_id || container_name>
 ```
-    - -f remove a container, even if it is running
+- -f remove a container, even if it is running
 
 Change `<container_id || container_name>` by `$(docker ps -aq)` the remove all containers
 
@@ -150,7 +152,7 @@ Remove all stopped containers
 ```
 docker system prune -a
 ```
-    - --volumes pour supprimer les potenciels volumes
+- --volumes pour supprimer les potenciels volumes
 
 Remove an image
 ```
@@ -171,9 +173,9 @@ docker rmi -f $(docker image ls -q)
 
 ## `FROM`
 Always start with `FROM ***` always set a version with `:vesion` otherwise docker will use `:latest` with could cause problem
-    - `debian`, `ubuntu` or `alpine` are famous linux distrib
-    - `mysql` or `nginx` are also popular
-    - `scratch` pour partir de 0
+- `debian`, `ubuntu` or `alpine` are famous linux distrib
+- `mysql` or `nginx` are also popular
+- `scratch` pour partir de 0
 
 
 ## `WORKDIR`
@@ -215,16 +217,16 @@ For launch it :
 ```
 docker compose up
 ```
-    - -d to run in backround 
-    - --build to build images 
-    - --force-recreate to delete old docker before running
-    - -f to change the default interpretate file (docker-compose.yml)
+- -d to run in backround 
+- --build to build images 
+- --force-recreate to delete old docker before running
+- -f to change the default interpretate file (docker-compose.yml)
 
 For down all docker
 ```
 docker compose down
 ```
-    - -v to remove named volumes
+- -v to remove named volumes
 
 ## `service`
 Section where we declare all services
@@ -279,7 +281,6 @@ Section where we put the services on witch depends the service
 ```
     depends_on:
       - db
->>>>>>> 619c570 (update docker)
 ```
 
 ## Create
@@ -302,21 +303,21 @@ docker build path/toFolderWitchConstainTheDockerfile -t name-of-image
 ```bash
 docker run <image name>
 ```
-    - -p <Y>:<X> option to expose the container's inner port X to be visible as Y from the Docker host
-    - --name Assign a specific name to the docker
-    - -d or --detache to run in background
-    - --rm to remove it automatically when it stop
-    - --interactive --tty or -it directly open the interactive mode where we can send input to the started container (oposite to -d)
-    - -e ENV-VAR=value _creer une variable d'environement_
-    - --net=<networkname> _attache le docker a un network_
-    - --hostname=my-hostname _change le nom du docker dans le reseau (son propre nom par default)_
-    - -v <my-volume || $(pwd)/random/host/path>:/container/path/to/store> _attache un volume au docker ou creer un volume anonyme a partir d'un fichier/dossier_ _en rajoutant :ro a la fin on peut etre en lecture seule_
+- -p <Y>:<X> option to expose the container's inner port X to be visible as Y from the Docker host
+- --name Assign a specific name to the docker
+- -d or --detache to run in background
+- --rm to remove it automatically when it stop
+- --interactive --tty or -it directly open the interactive mode where we can send input to the started container (oposite to -d)
+- -e ENV-VAR=value _creer une variable d'environement_
+- --net=<networkname> _attache le docker a un network_
+- --hostname=my-hostname _change le nom du docker dans le reseau (son propre nom par default)_
+- -v <my-volume || $(pwd)/random/host/path>:/container/path/to/store> _attache un volume au docker ou creer un volume anonyme a partir d'un fichier/dossier_ _en rajoutant :ro a la fin on peut etre en lecture seule_
 
 to restart a stoped docker 
 ```bash
     docker start <container_id | container_name>
 ```
-    - -a or --attach to start in attached mode
+- -a or --attach to start in attached mode
 
 
 ## Infos
@@ -324,21 +325,21 @@ Show running container
 ```bash
 docker ps
 ```
-    - -a For all container
-    - -q show ids 
+- -a For all container
+- -q show ids 
 
 Show info on specific container
 ```bash
 git inspect <container_id | container_name> 
 ```
-    - -f '{{.State.Status}}' for the state of the container
-    - -f '{{.NetworkSettings.IPAddress}}' get the IP address of a container running on the default bridge network 
+- -f '{{.State.Status}}' for the state of the container
+- -f '{{.NetworkSettings.IPAddress}}' get the IP address of a container running on the default bridge network 
 
 Show the log of the docker 
 ```bash
 git logs <container_id | container_name>
 ```
-    - -f print the logs and follows the log output if new logs are created
+- -f print the logs and follows the log output if new logs are created
 
 List all processes running inside a container
 ```bash
@@ -371,13 +372,13 @@ Stop running container
 ```bash
 docker stop <container_id | container_name>
 ```
-    - That gently stop them if it's don't work replace `stop` by `kill`
+- That gently stop them if it's don't work replace `stop` by `kill`
 
 Remove a container by name or id
 ```bash
 docker rm <container_id || container_name>
 ```
-    - -f remove a container, even if it is running
+- -f remove a container, even if it is running
 
 Change `<container_id || container_name>` by `$(docker ps -aq)` the remove all containers
 
@@ -385,7 +386,7 @@ Remove all stopped containers
 ```bash
 docker system prune -a
 ```
-    - --volumes pour supprimer les potenciels volumes
+- --volumes pour supprimer les potenciels volumes
 
 Remove an image
 ```bash
@@ -451,16 +452,16 @@ For launch it :
 ```bash
 docker compose up
 ```
-    - -d to run in backround 
-    - --build to build images 
-    - --force-recreate to delete old docker before running
-    - -f to change the default interpretate file (docker-compose.yml)
+- -d to run in backround 
+- --build to build images 
+- --force-recreate to delete old docker before running
+- -f to change the default interpretate file (docker-compose.yml)
 
 For down all docker
 ```bash
 docker compose down
 ```
-    - -v to remove named volumes
+- -v to remove named volumes
 
 ## `service`
 Section where we declare all services

@@ -1,5 +1,8 @@
-# Programation fonctionnelle 
-Quand java fait un appel (a une bdd par exemple) il attend activement donc est bloqué ce qui rend le multi threading obligatoir pour des applis web.
+[Accueil](README.md)
+# Java
+
+## Programation fonctionnelle, Async et Thread
+Quand java fait un appel (a une bdd par exemple) il attend activement donc est bloqué ce qui rend le multi threading obligatoire pour des appli web.
 
 La class `Thread` existe mais elle est très bas niveau on utilise des classes superieur.
 
@@ -66,14 +69,14 @@ Xss (Changer le nombre de stack)
 
 ## Garbage Collector
 Caractéristiques : 
-- *serial* ou *parallel*
-- *Stop the world* ou *Concurrent*
-- *Compating*, *non compacting* ou *copying*
+- **serial** ou **parallel**
+- **Stop the world** ou **Concurrent**
+- **Compating**, **non compacting** ou **copying**
 
 ### CMS (Concurrent Mark and Sweep)
-    *Concurrent*
+**Concurrent**
 
-    Categorise les objects à chaque passage 
+Categorise les objects à chaque passage 
 - Nouvel objet toujours utilisé -> Eden
 - Eden -> S1
 - S1 -> S2
@@ -81,7 +84,7 @@ Caractéristiques :
     Les passages du garbage collecteur sont de moins en moins frequent plus la categorie est old
 
 ### G1 Heap Allocation
-    *Compacting*
+**Compacting**
 Même principe que CMS mais avec du compacting pour optimiser la lecture mémoire.
 
 

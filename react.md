@@ -1,8 +1,11 @@
-Framwork react :
+[Accueil](README.md)
+# REACT 
+
+### Framwork react :
 - Next.js
 - Time stack (ensemble de library dont React)
 
-Major update to know
+### Major update to know
 - 16.0 : Les Fragments
 - 16.3 : Context API
 - 16.8 : Les Hooks
@@ -13,12 +16,12 @@ Major update to know
 Concept of **virtual dom**, React create a virtual dom witch serve as comparative when there are a change in the page to only render the difference.
 
 ## Component 
-The component is composed of 3 thingd : Props State Render
+The component is composed of 3 thingd : **Props**, **State**, **Render**
 
 A component have 3 state in the life cycle :
-Mounting -> Updating -> Unmounting
+**Mounting** -> **Updating** -> **Unmounting**
 
-The fragment <></> permit to have a list of element in my component without create a wrapper (ex: div). 
+The fragment `<></>` permit to have a list of element in my component without create a wrapper (ex: div). 
 
 Classic component :
 ```tsx
@@ -37,51 +40,73 @@ function MyButton(props: MyButtonProps) {
 
 
 ## Hook
-function preceed by **use** (only a convention)
-Used at the star of the component only
-Can't be used on condition or a loop
-Only on the function (not class)
+- Function preceed by **use** (only a convention)
+- Used at the star of the component only
+- Can't be used on condition or a loop
+- Only on the function (not class)
 
-**useState**();
+### `useState`
+
+```javascript
+const [enabled, setEnabled] = useState<boolean>(true);
+```
 
 Use only when it's really necessary !!
 In the future React Compiler will erase the necessary of that.
 
-**useEffect**(function, dependencyArray): void;
+### `useEffect`
+```javascript
+useEffect(function, dependencyArray): void;
+```
 
 Ex :
 #### Mount 
+```javascript
 useEffect(() => {
 	doWhenMount();
 }, []);
+```
 
 #### Update
+```javascript
 useEffect(() => {
 	doForSpecificUpdate();
 }, [props.something]);
+```
 
+```javascript
 useEffect(() => {
 	doForEachUpdate();
 });
+```
 
 #### Unmount
+```javascript
 useEffect(() => {
 	return () => {
 		doWhenUnmount();
 	};
 });
+```
 
+```javascript
 const memoizedValue = **useMemo**(() => computeExpensiveValue(a, b), [a, b]);
+```
 
+```javascript
 const memoizedCallback = **useCallback**(
 	() => {
 		doSomething(a, b);
 	},
 	[a, b],
 );
+```
 
 Not re-render ! Permit to do native api function on the element (like: scrollIntoView, ...)
+
+```javascript
 const intervalRef = **useRef**(0);
+```
 
 
 ## Other 
@@ -108,7 +133,9 @@ l’arbre et éviter le prop drilling
 
 ### Tanstack-query
 new hook 
+```javascript
 const { data, isError, isPending } = **useQuery**<Article[]>({
 	queryKey: [QueryKey.ARTICLES],
 	queryFn: () => findArticles(),
 });
+```

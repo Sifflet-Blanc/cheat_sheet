@@ -1,13 +1,14 @@
+[Accueil](README.md)
 # GitLab CI/CD
 All that in a file `.gitlab-ci.yml` on a repertory pushed on gitlab.
 
 Job 
-    some script to run 
-    conditional execution
+- some script to run 
+- conditional execution
 
 Stage 
-    contains jobs
-    allows parallel job
+- contains jobs
+- allows parallel job
 
 
 Ex of stage/job gestion in `.gitlab-ci.yml` :
@@ -99,6 +100,7 @@ deploy:
 We can put `$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH` to check if it's the main branch
 
 Or `$CI_COMMIT_BRANCH =~ "/^feature/"` to match a regex
+Or `$CI_PIPELINE_SOURCE == "merge_request_event"` 
 
 ## Cache 
 ```yaml

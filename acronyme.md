@@ -1,4 +1,5 @@
-La performance viens après tout.
+[Accueil](README.md)
+# Acronyme
 
 # ACID
 - **A**tomique (étapes non séparable (regroupée en transaction))
@@ -120,6 +121,7 @@ Class de donnée généralement (sans fonctionnement)
 **T**est **D**riven **D**evelopment
 
 # URI
+**U**niform **R**esource **I**dentifier
 
 # URL
 **U**niﬁied **R**esource **L**ocator

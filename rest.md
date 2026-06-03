@@ -1,17 +1,19 @@
-Ressource mise au pluriels dans les requetes
+[Accueil](README.md)
+# REST
+## Ressource mise au pluriels dans les requetes
 
-Verbe HTTP
-GET 
-POST
-PUT on envoie tout l'object (tout les champs) si en voulant modifier l'object on trouve qu'il existe pas on le creer 
-PATCH 
-DELETE
+## Verb HTTP
+- `GET` send back data
+- `POST` create a data
+- `PUT` we send all the field of the data we want to update and if it's not here create it  
+- `PATCH` update a specific part of a data, if it's not here raise an error
+- `DELETE` delete a data 
 
-Code de retours :
-100 - 199 information
-200 - 299 Succès
-300 - 399 Redirection
-400 - 499 Erreur imputable au client
-	401 Unauthorized = t'es pas authentifier
-	403 Forbidden = ressource existe mais on peut pas y acceder 
-500 - 599 Erreur serveur
+## Code de retours
+- 100 - 199 info
+- 200 - 299 Succes
+- 300 - 399 Redirection
+- 400 - 499 Client error
+	- 401 Unauthorized = t'es pas authentifier
+	- 403 Forbidden = ressource existe mais on peut pas y acceder 
+- 500 - 599 Erreur serveur
