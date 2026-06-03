@@ -17,7 +17,7 @@ New major every 6 mounth (every version LTS when a new release (only 2 LTS))
 Command on the [CLI](acronyme.md#cli) to update version.
 
 
-## CLI
+## CLI
 Install `npm install -g @angular/cli@21`
 Create a project `ng new my-angular-app`
 Run the project `ng serve`
@@ -27,22 +27,22 @@ Create a component `ng generate component <COMPONENT_NAME>`
 Create a service `ng generate service <SERVICE_NAME>`
 Create a directive `ng generate directive <DIRECTIVE_NAME>`
 
-## Component 
+## Component 
 UserComponent
 - `user.component.ts` _behaviour_
 - `user.component.scss` _style_
 - `user.component.html` _template_
 - `user.component.spec.ts` _test_
 
-## Binding
+## Binding
 Lien entre votre template et votre modèle
 - synchronous vue and model
 - Notiﬁer une interaction utilisateur sur la vue ou le modèle
 
 ### Many type
 - Interpolation : {{}} access directly to the component 
-- Property binding : [] a variable in TS used in HTML template
-- Attribute binding : [] a variable to define an attribute of a HTML element
+- Property binding : [] a variable in TS used in HTML template
+- Attribute binding : [] a variable to define an attribute of a HTML element
 - Class & Style binding : [] a variable to define the CSS of a HTML element
 - Event binding : () an interact on a template linked to a TS method
 - Two-way binding : [()] a variable link to the HTML value and the ts value (banana in the box)
@@ -95,7 +95,7 @@ When removeCard() is call it emit `remove` and so the function removeDeveloper()
 - Change detect 
 - Destruct
 
-## Service
+## Service
 
 @Injectable = Service
 - provideIn: root = singleton
@@ -162,7 +162,7 @@ in HTML file
 }
 ```
 
-## Directive
+## Directive
 
 ```ts
 import {Directive, ElementRef} from '@angular/core';
@@ -255,11 +255,11 @@ souscription.unsubscribe();
 
 Don't forget to unsubscribe !
 
-## Hot/Cold
+## Hot/Cold
 Hot allway emit if we lisen it or not.
 Cold is what we describe earlier.
 
-## Subject
+## Subject
 Child of Observable and Observer
 ```ts
 const subject$ = new Subject<number>();
@@ -433,7 +433,7 @@ or
 }
 ```
 
-## Signal
+## Signal
 Wrapper around a value witch permit to track it 
 Synchronous
 Déclarative
@@ -476,11 +476,11 @@ Router outlet (directive)
 load the module only when we need it 
 reduce the size of the module
 
-### Navigation
+### Navigation
 Use routerLink with element `<a>`
 Use `Router` service
 
-### Parameter
+### Parameter
 use `:` in the path define
 
 ### Route config
