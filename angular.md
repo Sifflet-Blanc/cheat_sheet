@@ -2,29 +2,38 @@
 # Angular
 
 Framwork + library
+
 Made by google
+
 Typescript based 
+
 Dependance injection
+
 Model [MVC](acronyme.md#mvc)
+
 [SPA](acronyme.md#spa)
 
 New major every 6 mounth (every version LTS when a new release (only 2 LTS))
-17.0 new identity and big change 
-21.0 (Mai 2025)
-21.0 (November 2025)
-22.0 (June 2026)
+- 17.0 new identity and big change 
+- 21.0 (Mai 2025)
+- 21.0 (November 2025)
+- 22.0 (June 2026)
 
 Command on the [CLI](acronyme.md#cli) to update version.
 
 
 ## CLI
 Install `npm install -g @angular/cli@21`
+
 Create a project `ng new my-angular-app`
+
 Run the project `ng serve`
+
 Create a component `ng generate component <COMPONENT_NAME>`
 - --dry-run no change are actually made 
 
 Create a service `ng generate service <SERVICE_NAME>`
+
 Create a directive `ng generate directive <DIRECTIVE_NAME>`
 
 ## Component 
@@ -217,7 +226,7 @@ of(a: any): Observable
 ```ts
 from(a: any): Observable
 ```
-a is a array or iterable get value one by one
+an is an array or iterable get value one by one
 Both behind are synchronous
 ```ts
 fromEvent(): Observable
@@ -256,7 +265,8 @@ souscription.unsubscribe();
 Don't forget to unsubscribe !
 
 ## Hot/Cold
-Hot allway emit if we lisen it or not.
+Hot always emit if we listen it or not.
+
 Cold is what we describe earlier.
 
 ## Subject
