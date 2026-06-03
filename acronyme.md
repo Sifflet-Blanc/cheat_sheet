@@ -1,4 +1,4 @@
-[Accueil](README.md)
+[Home](README.md)
 # Acronyme
 
 # ACID
@@ -12,6 +12,9 @@
 
 # AOP
 **A**spect **O**rient **P**rograming
+
+# CLI
+**C**ommand **L**ine **I**nterface
 
 # CSR
 **C**lient **S**ide **R**endering
@@ -97,6 +100,12 @@ Class de donnée généralement (sans fonctionnement)
 
 # RTFM
 **R**ead **T**he **F**ucking **M**anual
+
+# Rx
+**R**eactive**X**
+- RxJS
+- RxJava
+- ...
 
 # SPA
 **S**ingle **P**age **A**pplication

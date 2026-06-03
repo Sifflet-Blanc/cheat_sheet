@@ -1,4 +1,4 @@
-[Accueil](README.md)
+[Home](README.md)
 # GitLab CI/CD
 All that in a file `.gitlab-ci.yml` on a repertory pushed on gitlab.
 

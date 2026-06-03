@@ -1,4 +1,4 @@
-[Accueil](README.md)
+[Home](README.md)
 # JavaScript
 
 Event loop & Mono thread 
@@ -7,6 +7,9 @@ Event loop & Mono thread
 file `package.json`
 
 mettre `^` ou `~` devant les dependances pour avoir de la souplesse (^4.2.3 = 4.X.X (forcement superieur), ~4.2.3 = 4.2.X)
+
+The `package-lock.json` is created by `npm install`/`npm i` it fixe the version and the dependance tree.
+`npm ci` to only install from `package-lock.json`
 
 
 ### Hoisting

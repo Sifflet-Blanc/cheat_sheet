@@ -1,4 +1,4 @@
-[Accueil](README.md)
+[Home](README.md)
 # Install
 
 Uninstall old package
