@@ -2,21 +2,22 @@
 # Spring
 
 - Framework
-- Java (JVM)
-- Ioc Container
-	Injection de dépendances
-- AOP (programmation axée sur l'aspect)
+- Java ([JVM](acronyme.md#jvm))
+- [IoC](acronyme.md#ioc) Container
+  - Injection de dépendances
+- [AOP](acronyme.md#aop)
 - Eco-système (ensemble d'application)
   - Spring Boot
   - Spring security
   - Spring Boot (config de Spring pas default)
   - ... 
 
-## IoC Container
+## [IoC](acronyme.md#ioc) Container
 
 ## Transaction
 Actions atomiques, un ensemble d'action qui doivent se produire ensemble, si une echoue toutes doivent echoué.
-ACID
+
+[ACID](acronyme.md#acid)
 
 L'indépendance des services doit etre maximum (Ex: SQLException, une Exception n'est un un pb ici c'est juste que si on change de moteur de bdd il faudra changer la couche service ce qu'on ne veux pas)
 
@@ -51,7 +52,7 @@ Injection des beans dans les objects **@Autowired**(defini par default)
 fichier de config Spring pour definir des Beans (généralement pour des objects externes)
 
 
-# AOP
+# [AOP](acronyme.md#aop)
 Concepts 
 - **JoinPoint** : l’endroit où appliquer le traitement
   - une méthode

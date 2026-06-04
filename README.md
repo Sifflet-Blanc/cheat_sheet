@@ -2,6 +2,7 @@
 Some usefull cheat sheet :
 
 - [Acronyme](acronyme.md)
+- [Angular](angular.md)
 - [Docker](docker.md)
 - [FFMPEG](ffmpeg.md)
 - [Git](git.md)

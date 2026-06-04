@@ -1,6 +1,16 @@
 [Home](README.md)
 # REACT 
 
+It's a library open-source in javascript, create by Facebook in 2013.
+
+It allows you to create Single Page Application ([SPA](acronyme.md#spa)).
+
+You create components that are reusables.
+
+A component follows a life-cycle.
+
+It has props and a state.
+
 ### Framwork react :
 - Next.js
 - Time stack (ensemble de library dont React)
@@ -12,8 +22,8 @@
 - 18.2 : Concurrent management
 - 19.1 : Aujourd’hui
 
-**Render** action of create the dom from the code.
-Concept of **virtual dom**, React create a virtual dom witch serve as comparative when there are a change in the page to only render the difference.
+**Render** action of create the [dom](acronyme.md#dom) from the code.
+Concept of **virtual [dom](acronyme.md#dom)**, React create a virtual [dom](acronyme.md#dom) witch serve as comparative when there are a change in the page to only render the difference.
 
 ## Component 
 The component is composed of 3 thingd : **Props**, **State**, **Render**
@@ -114,7 +124,7 @@ const intervalRef = **useRef**(0);
 ### Key
 When I have a list of item i need to use a key prop to permit
 
-### HOC
+### [HOC](acronyme.md#hoc)
 deprecated with hooks
 
 ### Context

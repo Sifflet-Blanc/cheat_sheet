@@ -63,7 +63,7 @@ On peut revenir en sequentiel avec `.sequential()`
 Ne doit pas etre utilisé en attributs de classe ni en paramètre de méthode (bonne pratique)
 
 
-# JVM
+# [JVM](acronyme.md#jvm)
 Xms - Xmx (respectivement la mémoire minimale, maximale, pour la jvm (pour la HEAP))
 Xss (Changer le nombre de stack)
 
@@ -91,7 +91,7 @@ Même principe que CMS mais avec du compacting pour optimiser la lecture mémoir
 ## Thread dump / Heap dump
 
 ### Thread dump 
-Liste les threads java actifs dans la JVM, permet de determiner les cuase d'un pb via les traces et logs de l'appli.
+Liste les threads java actifs dans la [JVM](acronyme.md#jvm), permet de determiner les cuase d'un pb via les traces et logs de l'appli.
 
 Recuperer le PID du process Java
 ```bash

@@ -22,7 +22,7 @@ New major every 6 mounth (every version LTS when a new release (only 2 LTS))
 Command on the [CLI](acronyme.md#cli) to update version.
 
 
-## CLI
+## [CLI](acronyme.md#cli)
 Install `npm install -g @angular/cli@21`
 
 Create a project `ng new my-angular-app`
