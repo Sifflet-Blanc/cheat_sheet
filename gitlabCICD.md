@@ -1,4 +1,4 @@
-[Home](README.md)
+[< Home](README.md)
 # GitLab CI/CD
 All that in a file `.gitlab-ci.yml` on a repertory pushed on gitlab.
 
@@ -102,7 +102,7 @@ We can put `$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH` to check if it's the main b
 Or `$CI_COMMIT_BRANCH =~ "/^feature/"` to match a regex
 Or `$CI_PIPELINE_SOURCE == "merge_request_event"` 
 
-## Cache 
+## Cache 
 ```yaml
 # Cache for every job in every pipeline
 cache:
@@ -123,7 +123,7 @@ unit:
 ```
 Mettre une cle pour le cache c'est l'equivalent de connaitre l'id (c'est mieux)
 
-## Artifacts 
+## Artifacts 
 ```yaml
 stages:
     - build

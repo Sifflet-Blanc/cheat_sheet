@@ -1,4 +1,5 @@
-[Home](README.md)
+[< Home](README.md) 
+
 # Acronyme
 
 # ACID
@@ -7,11 +8,17 @@
 - **I**solation (transaction isolée entre elle)
 - **D**urability (Base de donnée resiste aux problèmes)
 
+# ADR
+**A**rchitechture **D**ecision **R**ecord
+
 # AJAX
 **A**synchronous **JA**vascript **X**ML
 
 # AOP
 **A**spect **O**rient **P**rograming
+
+# APM
+**A**pplication **P**erformance **M**anagement
 
 # CLI
 **C**ommand **L**ine **I**nterface
@@ -52,11 +59,26 @@
 # IIFE
 **I**mmediately **I**nvoked **F**unction **E**xpression
 
+# INVEST
+For user story.
+- **I**ndependant : not a front or a back ticket for a feature witch need both (each ticket need to be demonstrable) 
+- **N**egociable 
+- **V**aluable 
+- **E**stimable : defined perimeter 
+- **S**mall : 1 value per ticket 
+- **T**estable 
+
 # IoC
 **I**nvertion **o**f **C**ontrol
 
 # JDBC
 **J**ava **D**ata **B**ase **C**onnectivity
+
+# JDK
+**J**ava **D**evelopment **K**it
+
+# JIT
+**J**ust **I**n **T**ime
 
 # JPA
 **J**ava **P**ersistance **A**PI 
@@ -82,6 +104,9 @@ Bouquin sur le design patern
 # ORM
 **O**bject **R**elation **M**apping
 
+# PO
+**P**roduct **O**wner
+
 # POC
 **P**roof **o**f **C**oncept
 
@@ -94,6 +119,12 @@ Class de donnée généralement (sans fonctionnement)
 
 # REST
 **RE**presentational **S**tate **T**ransfer
+
+# RGAA
+**R**éférentiel **G**énéral d’**A**mélioration de l’**A**ccessibilité 
+
+# ROI
+**R**eturn **O**n **I**nvestment
 
 # RPC
 **R**emote **P**rocedure **C**all
@@ -132,11 +163,26 @@ Class de donnée généralement (sans fonctionnement)
 # URI
 **U**niform **R**esource **I**dentifier
 
+# US
+**U**ser **S**tory
+
 # URL
 **U**niﬁied **R**esource **L**ocator
 
 # URN
 **U**niﬁied **R**esource **N**ame
+
+# W3C
+**W**orld **W**ide **W**eb **C**onsortium
+
+# WAL
+**W**rite-**A**head **L**og
+
+# WCAG
+**W**eb **C**ontent **A**ccessibility **G**uidelines
+
+# WIP (TAF)
+**W**ork **I**n **P**rogress (**T**ravail **À** **F**aire)
 
 # YAGNI
 **Y**ou **A**in't **G**ona **N**eed **I**t

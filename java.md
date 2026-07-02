@@ -1,7 +1,69 @@
-[Home](README.md)
+[< Home](README.md)
 # Java
 
+- java 8
+  - stream API
+  - lambda expression
+  - Date and Time API
+  - Optional
+- java 11
+- java 15
+- java 21
+  - virtual thread
+- java 25
+
+## [POO](acronyme.md#poo)
+3 principle : 
+- Héritage
+- Encapsulation
+  The operation of a class need to be intern
+- Polymorphisme 
+  - Override
+  - Overload
+ 
+ ~ Abstraction 
+
+## Storage 
+
+### Heap
+Where the class instance are stored
+The garbage collector free space frequenly
+
+### Stack
+Stack of the method call
+Attach to a thread 
+
+### Meta space 
+Dynamic memory witch contain static field, class and method 
+
+## Collection API
+![CollectionApi](asset/CollectionApi.jpg)
+
+## Stream API
+- intermediary operation
+  - State less (parallel)
+    - Filter
+    - Map
+  - Stateful
+    - Distinct
+    - Sorted
+    - Limit
+- Final operation
+  - forEach
+  - toArray
+  - collect
+
+We can parallelize state less stream method with  `.parallel()` all following opteration will be parallelized.
+We can return to a sequential state with `.sequential()`
+
+## Parallelisation
+3 keywords :
+- transient
+- synchronized
+- atomic
+
 ## Programation fonctionnelle, Async et Thread
+
 Quand java fait un appel (a une bdd par exemple) il attend activement donc est bloqué ce qui rend le multi threading obligatoire pour des appli web.
 
 La class `Thread` existe mais elle est très bas niveau on utilise des classes superieur.
@@ -38,23 +100,6 @@ Le mot cle `synchronized` (meme emplacement que `static` uniquement sur les fonc
 `volatile` permet de verouiller la lecture seulement (uniquement pour les attributs) (par contre ces deux mot cle rallentissent potenciellement le programe, ex volatile force la variable a rester dans la ram plutot que dans le cache) .
 
 Les classe `Atomic` (ex `AtomicLong`, `AtomicReference<T>`) est une classe qui a une implementation qui resiste au problème de concurence.
-
-
-# Stream
-Interet de la `Stream` c'est pour des traitements sur des collections. Pour l'acces au données et les ajouts, suppressions ciblée les collections restent meilleures.
-
-3 type d'operation
-## Stateless
-`filter` ou `map`
-
-## Stateful
-`distinc`, `sorted`, `limit`
-
-## Operation finale
-`forEach`, `toArray`, `collect`
-
-Possibilitée de traitement parallele avec l'option `.parallel()` transforme le reste du traitement en traitement parallele.
-On peut revenir en sequentiel avec `.sequential()`
 
 
 # Optional 

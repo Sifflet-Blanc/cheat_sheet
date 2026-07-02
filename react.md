@@ -1,34 +1,33 @@
-[Home](README.md)
+[< Home](README.md)
 # REACT 
 
-It's a library open-source in javascript, create by Facebook in 2013.
-
-It allows you to create Single Page Application ([SPA](acronyme.md#spa)).
-
-You create components that are reusables.
-
-A component follows a life-cycle.
-
-It has props and a state.
+- It's a library open-source in javascript, create by Facebook in 2013.
+- It allows you to create Single Page Application ([SPA](acronyme.md#spa)).
+- You create components that are reusables. 
+- A component follows a life-cycle.
+- It has props and a state.
 
 ### Framwork react :
 - Next.js
-- Time stack (ensemble de library dont React)
+- Vite.js
+- Time stack (bundle of library including React)
 
 ### Major update to know
-- 16.0 : Les Fragments
+- 16.0 : Fragments
 - 16.3 : Context API
-- 16.8 : Les Hooks
+- 16.8 : Hooks
 - 18.2 : Concurrent management
-- 19.1 : Aujourd’hui
+- 19.1 : to day
 
 **Render** action of create the [dom](acronyme.md#dom) from the code.
+
 Concept of **virtual [dom](acronyme.md#dom)**, React create a virtual [dom](acronyme.md#dom) witch serve as comparative when there are a change in the page to only render the difference.
 
 ## Component 
 The component is composed of 3 thingd : **Props**, **State**, **Render**
 
 A component have 3 state in the life cycle :
+
 **Mounting** -> **Updating** -> **Unmounting**
 
 The fragment `<></>` permit to have a list of element in my component without create a wrapper (ex: div). 

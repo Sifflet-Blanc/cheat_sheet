@@ -1,4 +1,4 @@
-[Home](README.md)
+[< Home](README.md)
 # Git
 
 ## Config
@@ -53,7 +53,7 @@ Pour remonder sur un commit anterieur d'une branche
 `git checkout <branch name>~<-nth commit>`
 
 
-## Merge 
+## Merge 
 `git merge <branch name>` _en etant sur la branche dans la quelle on veux merge_
 - `--no-ff` force la creation d'un commit de merge
 
@@ -91,11 +91,11 @@ in the end before push we can check if everything is clean with
 `git clean -n`
 `git clean -f`
 
-## Ajout retrait de modif 
+## Ajout retrait de modif 
 `git add -A` _-A ajoute tout alors que le . ajoute que le dossier courant (et les sous dossiers)_
 `git reset .` _Contraire de add_
 
-## Commit 
+## Commit 
 `git commit -m "Some message"` _creer un commit avec les changements locaux et un message_
     - --amend _integre les changements au dernier commit_
 
@@ -108,7 +108,7 @@ in the end before push we can check if everything is clean with
 `git stash drop` _detruit le dernier stash_
 
 
-## Infos 
+## Infos 
 Voir la difference entre deux commit (par defaut l'actuel et le precedent)
 `git diff <commit1> <commit2>` _difference entre le commit actuel et le dernier_
 
@@ -149,7 +149,7 @@ Ctrl-v -c
 `git cherry-pick <commit>` _copie un commit sur la branche actuelle_
 
 
-## Remote 
+## Remote 
 
 Infos 
 `git remote -v` _infos sur le repo distant_
