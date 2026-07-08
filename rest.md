@@ -1,4 +1,4 @@
-[< Home](README.md)
+**[< Home](README.md)**
 # [REST](acronyme.md#rest)
 ## Ressource mise au pluriels dans les requetes
 

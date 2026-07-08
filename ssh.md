@@ -1,4 +1,4 @@
-[< Home](README.md)
+**[< Home](README.md)**
 # Configuration de git et du ssh
 - Création des bon fichier s'ils n'existent pas déjà
   ```

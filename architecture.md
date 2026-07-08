@@ -1,4 +1,4 @@
-[< Home](README.md)
+**[< Home](README.md)**
 # Architecture
 
 2 major types :

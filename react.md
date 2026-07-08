@@ -1,4 +1,4 @@
-[< Home](README.md)
+**[< Home](README.md)**
 # REACT 
 
 - It's a library open-source in javascript, create by Facebook in 2013.

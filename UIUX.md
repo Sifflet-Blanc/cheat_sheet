@@ -1,4 +1,4 @@
-[< Home](README.md)
+**[< Home](README.md)**
 # UI/UX
 
 Only one button per primary page 

@@ -1,4 +1,4 @@
-[< Home](README.md) 
+**[< Home](README.md)** 
 
 # Acronyme
 
@@ -53,6 +53,9 @@
 # ES
 **E**CMA**S**cript
 
+# HATEOAS
+**H**ypermedia **A**s **T**he **E**ngine **O**f **A**pplication **S**tate
+
 # HOC
 **H**igher **O**rder **C**omponents
 
@@ -93,6 +96,7 @@ For user story.
 **K**eep **I**t **S**imple **S**tupid
 
 # GoF
+**G**ang **o**f **F**our
 Bouquin sur le design patern
 
 # MPA
