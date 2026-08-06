@@ -11,6 +11,8 @@ Some usefull cheat sheet :
 - [Java](java.md)
 - [JavaScript](javascript.md)
 - [Kafka](kafka.md)
+- [Kotlin](kotlin.md)
+- [Kubernetes](kubernetes.md)
 - [Persistence](persistence.md)
 - [Python](python.md)
 - [React](react.md)

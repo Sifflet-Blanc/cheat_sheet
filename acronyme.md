@@ -164,6 +164,9 @@ Class de donnée généralement (sans fonctionnement)
 # TDD
 **T**est **D**riven **D**evelopment
 
+# TMA
+**T**ierce **M**aintenance **A**pplicative
+
 # URI
 **U**niform **R**esource **I**dentifier
 
